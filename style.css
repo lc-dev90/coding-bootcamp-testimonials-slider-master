@@ -3,6 +3,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  transform: translateY(20px);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -33,12 +34,11 @@ body {
 }
 
 main {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   width: 350px;
 }
 
@@ -67,17 +67,17 @@ header .img-slider::after {
   content: "";
   position: absolute;
   z-index: 2;
-  top: 6px;
-  left: 11px;
-  width: 91%;
-  height: 86%;
+  top: -3px;
+  left: 34px;
+  width: 82%;
+  height: 95%;
   background: url(./images/pattern-bg.svg) no-repeat center center / cover;
 }
 
 .buttons {
   position: absolute;
   display: flex;
-  top: 254px;
+  top: 225px;
   left: 50%;
   transform: translateX(-50%);
   width: 90px;
@@ -133,8 +133,8 @@ header .img-slider::after {
 }
 
 figure {
-  width: 70%;
-  transform: translateY(-15px);
+  width: 65%;
+  transform: translateY(-9px);
   border-radius: 10px;
   overflow: hidden;
   position: absolute;
@@ -148,15 +148,31 @@ figure {
   align-items: center;
   box-shadow: 0px 7px 25px #0000005e;
 }
-
 figure img {
   width: 100%;
 }
 
 section {
-  padding: 0 30px 30px 30px;
+  padding: 45px 25px 0 25px;
   width: 100%;
   height: 50%;
+}
+
+.testimonial-card {
+  width: 100%;
+  height: 55%;
+  position: relative;
+}
+
+.testimonial-card::before {
+  position: absolute;
+  content: "";
+  top: -18%;
+  left: 52%;
+  width: 20%;
+  height: 38%;
+  transform: translateX(-50%);
+  background: url(./images/pattern-quotes.svg) no-repeat center center / cover;
 }
 
 .testimonial {
@@ -172,6 +188,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform: translateY(15px);
 }
 
 .author span {
