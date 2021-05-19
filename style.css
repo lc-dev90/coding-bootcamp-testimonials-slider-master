@@ -16,7 +16,9 @@
   --blue-50: rgb(223, 223, 231);
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,15 +65,15 @@ header .img-slider {
 }
 
 header .img-slider::after {
-  z-index: 3;
   content: "";
   position: absolute;
   z-index: 2;
-  top: -3px;
-  left: 34px;
-  width: 82%;
-  height: 95%;
-  background: url(./images/pattern-bg.svg) no-repeat center center / cover;
+  top: -198px;
+  left: -172px;
+  width: 697px;
+  height: 657px;
+  background: url(./images/pattern-bg.svg) no-repeat center / cover;
+  transform: scale(0.425);
 }
 
 .buttons {
@@ -167,22 +169,22 @@ section {
 .testimonial-card::before {
   position: absolute;
   content: "";
-  top: -18%;
-  left: 52%;
-  width: 20%;
-  height: 38%;
-  transform: translateX(-50%);
+  top: -41%;
+  left: 31%;
+  width: 120px;
+  height: 100px;
+  transform: scale(0.6);
   background: url(./images/pattern-quotes.svg) no-repeat center center / cover;
 }
 
 .testimonial-card::after {
   position: absolute;
   content: "";
-  bottom: 0;
-  left: 52%;
-  width: 20%;
-  height: 38%;
-  transform: translateX(-50%);
+  bottom: -185px;
+  left: -51%;
+  width: 610px;
+  height: 153.95px;
+  transform: scale(0.45);
   background: url(./images//pattern-curve.svg) no-repeat center center / cover;
 }
 
