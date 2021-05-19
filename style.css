@@ -37,6 +37,39 @@ header {
   padding: 30px;
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .img-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+header .img-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: url(./images/pattern-bg.svg);
+}
+
+figure {
+  width: 85%;
+  height: 75%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
 }
 
 section {
