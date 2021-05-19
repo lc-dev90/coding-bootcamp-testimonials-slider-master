@@ -40,7 +40,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 550px;
+  height: 600px;
   width: 350px;
 }
 
@@ -136,7 +136,7 @@ header .img-slider::after {
 
 figure {
   width: 65%;
-  transform: translateY(-9px);
+  transform: translateY(-17px);
   border-radius: 10px;
   overflow: hidden;
   position: absolute;
@@ -169,7 +169,7 @@ section {
 .testimonial-card::before {
   position: absolute;
   content: "";
-  top: -41%;
+  top: -37%;
   left: 31%;
   width: 120px;
   height: 100px;
@@ -180,7 +180,7 @@ section {
 .testimonial-card::after {
   position: absolute;
   content: "";
-  bottom: -185px;
+  bottom: -205px;
   left: -51%;
   width: 610px;
   height: 153.95px;
