@@ -12,6 +12,7 @@
   /*   ## Colors */
   --blue-500: hsl(240, 38%, 20%);
   --blue-100: hsl(240, 18%, 77%);
+  --blue-50: rgb(223, 223, 231);
 }
 
 * {
@@ -75,6 +76,7 @@ header .img-slider::after {
 
 .buttons {
   position: absolute;
+  display: flex;
   top: 254px;
   left: 50%;
   transform: translateX(-50%);
@@ -85,15 +87,27 @@ header .img-slider::after {
   border: none;
   border-radius: 50px;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.561);
+  overflow: hidden;
 }
 
 .left {
   width: 50%;
   height: 100%;
+  cursor: pointer;
 }
+
+.left:hover {
+  background-color: var(--blue-50);
+}
+
 .right {
+  cursor: pointer;
   height: 100%;
   width: 50%;
+}
+
+.right:hover {
+  background-color: var(--blue-50);
 }
 
 .left::after {
@@ -104,9 +118,11 @@ header .img-slider::after {
   top: 15px;
   left: 17px;
   position: absolute;
+  pointer-events: none;
 }
 
 .right::after {
+  pointer-events: none;
   content: "";
   background: url(./images/icon-next.svg) no-repeat center center;
   width: 13px;
@@ -134,7 +150,7 @@ figure {
 }
 
 figure img {
-  width: 98%;
+  width: 100%;
 }
 
 section {
