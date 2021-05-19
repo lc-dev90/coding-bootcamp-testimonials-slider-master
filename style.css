@@ -73,7 +73,7 @@ header .img-slider::after {
   width: 697px;
   height: 657px;
   background: url(./images/pattern-bg.svg) no-repeat center / cover;
-  transform: scale(0.425);
+  transform: scale(0.421);
 }
 
 .buttons {
