@@ -24,6 +24,16 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+body::after {
+  content: url(./images/pattern-curve.svg);
+  position: absolute;
+  transform: scale(0.75);
+  transform-origin: bottom left;
+  bottom: 0;
+  left: 0;
 }
 
 main {
