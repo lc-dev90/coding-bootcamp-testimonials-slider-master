@@ -2,9 +2,13 @@
 
 :root {
   /*   ## Colors */
-  --blue-500: hsl(240, 38%, 20%);
-  --blue-100: hsl(240, 18%, 77%);
-  --blue-50: rgb(223, 223, 231);
+  --clr-blue-500: hsl(240, 38%, 20%);
+  --clr-blue-100: hsl(240, 18%, 77%);
+  --clr-blue-50: rgb(223, 223, 231);
+
+  --fw-light: 300;
+  --fw-medium: 500;
+  --fw-bold: 700;
 }
 
 *,
@@ -31,4 +35,85 @@ main {
   width: 95%;
   max-height: 660px;
   padding: 50px;
+}
+
+.testimonial-card {
+  color: var(--clr-blue-500);
+  font-weight: var(--fw-light);
+  font-size: 1.85rem;
+  flex: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial {
+  position: absolute;
+  top: 50%;
+  right: -130px;
+  transform: translateY(-35%);
+  z-index: 2;
+}
+
+.testimonial p {
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.text {
+  position: relative;
+}
+
+.text::after {
+  position: absolute;
+  content: url(./images/pattern-quotes.svg);
+  z-index: -1;
+  top: -30%;
+  left: 14%;
+  transform: scale(0.9);
+}
+
+.testimonial span {
+  font-size: 1.18rem;
+}
+
+.name {
+  font-weight: var(--fw-bold);
+  color: var(--clr-blue-500);
+}
+
+.job {
+  font-weight: var(--fw-medium);
+  color: var(--clr-blue-50);
+}
+
+.img-slider {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.img-slider::after {
+  content: url(./images/pattern-bg.svg);
+  position: absolute;
+  top: -18%;
+  left: -7%;
+  right: 0;
+  bottom: 0;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+figure {
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.buttons {
+  position: absolute;
 }
