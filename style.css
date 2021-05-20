@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  transform: translateY(60px);
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 :root {
   /*   ## Colors */
   --blue-500: hsl(240, 38%, 20%);
@@ -26,4 +17,18 @@
 
 body {
   font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 95%;
+  max-height: 660px;
+  padding: 50px;
 }
