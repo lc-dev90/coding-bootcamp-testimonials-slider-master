@@ -393,7 +393,7 @@ figure {
   }
 
   body::after {
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
   main {
     display: flex;
@@ -476,7 +476,7 @@ figure {
     height: initial;
   }
   body::after {
-    transform: scale(0.3);
+    transform: scale(0.5);
   }
 
   .img-slider::after {
