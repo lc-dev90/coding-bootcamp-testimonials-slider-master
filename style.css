@@ -309,22 +309,24 @@ button.right::after {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 350px) {
+  body {
+    overflow: visible;
+    height: initial;
+  }
   body::after {
     transform: scale(0.3);
-  }
-  main {
-    padding: 10px;
-    width: 95vw;
   }
 
   .img-slider::after {
     transform: scale(0.1);
-    top: -46%;
-    left: -36%;
+    top: -54%;
+    left: -57%;
   }
 
   .buttons {
-    transform: translateX(20%) translateY(5px);
+    bottom: -4.5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
   }
 }
