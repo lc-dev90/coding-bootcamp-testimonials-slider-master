@@ -4,7 +4,7 @@ Coding Bootcamp Testimonials Slider
 
 ## Demo link:
 
-Access my site at
+Access my site at https://angry-euclid-f18e38.netlify.app
 
 ## Table of Content:
 
@@ -20,7 +20,10 @@ Challenge from frontendmentor.io for academic purposes
 
 ## Screenshots
 
-`![]()`
+![](https://raw.githubusercontent.com/lc-dev90/coding-bootcamp-testimonials-slider-master/master/screenshots/Captura%20de%20tela_2021-05-21_01-30-42.png)
+![](https://raw.githubusercontent.com/lc-dev90/coding-bootcamp-testimonials-slider-master/master/screenshots/Captura%20de%20tela_2021-05-21_01-31-16.png)
+![](https://raw.githubusercontent.com/lc-dev90/coding-bootcamp-testimonials-slider-master/master/screenshots/Captura%20de%20tela_2021-05-21_01-31-36.png)
+![](https://raw.githubusercontent.com/lc-dev90/coding-bootcamp-testimonials-slider-master/master/screenshots/Captura%20de%20tela_2021-05-21_01-31-53.png)
 
 ## Technologies
 
