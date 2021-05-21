@@ -128,6 +128,7 @@ figure img {
 }
 
 .buttons {
+  background-color: white;
   position: absolute;
   width: 105px;
   height: 55px;
@@ -147,6 +148,12 @@ figure img {
   margin: 0;
   border: 0;
   cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+
+button:hover {
+  filter: contrast(0.85);
 }
 
 button.left {
