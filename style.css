@@ -70,8 +70,19 @@ main {
 .testimonial p {
   margin-bottom: 25px;
   line-height: 1.4;
+  animation-name: texto-esmoecedor;
+  animation-duration: 1s;
 }
 
+@keyframes texto-esmoecedor {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
 .text {
   position: relative;
 }
@@ -89,31 +100,39 @@ main {
   font-size: 1.18rem;
 }
 
-.name {
+span.name {
   font-weight: var(--fw-bold);
   color: var(--clr-blue-500);
+  animation-name: name-monstruoso;
+  animation-duration: 2s;
 }
 
-.job {
+span.job {
   font-weight: var(--fw-medium);
   color: var(--clr-blue-50);
+  animation-name: name-monstruoso;
+  animation-duration: 2s;
+}
+
+@keyframes name-monstruoso {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .img-slider {
   display: flex;
   justify-content: flex-end;
   position: relative;
-}
-
-.img-slider::after {
-  content: url(./images/pattern-bg.svg);
-  position: absolute;
-  top: -18%;
-  left: -7%;
-  right: 0;
-  bottom: 0;
-  transform: scale(0.9);
-  z-index: -1;
 }
 
 figure {
@@ -189,6 +208,89 @@ button.right::after {
   transform: translateY(-50%) translateX(-50%);
 }
 
+.img-slider::after {
+  content: url(./images/pattern-bg.svg);
+  position: absolute;
+  top: -18%;
+  left: -7%;
+  right: 0;
+  bottom: 0;
+  transform: scale(0.9);
+  z-index: -1;
+  animation-name: bg-pattern;
+  animation-duration: 2.5s;
+}
+
+@keyframes bg-pattern {
+  0% {
+    left: 120%;
+  }
+
+  50% {
+    left: -30%;
+  }
+  100% {
+    top: -18%;
+    left: -7%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.buttons {
+  background-color: white;
+  position: absolute;
+  width: 105px;
+  height: 55px;
+  z-index: 3;
+  bottom: -4.5%;
+  left: 20%;
+  transform: translateX(-30%);
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: -10px 10px 30px rgb(0 0 0 / 15%), 10px 10px 30px rgb(0 0 0 / 15%),
+    -65px -4px 35px rgb(0 0 0 / 10%), 65px -4px 35px rgb(0 0 0 / 10%);
+  animation-name: botao-voador;
+  animation-duration: 1s;
+}
+
+@keyframes botao-voador {
+  0% {
+    display: none;
+  }
+
+  25% {
+    bottom: -104.5%;
+    left: 20%;
+  }
+
+  100% {
+    bottom: -4.5%;
+    left: 20%;
+  }
+}
+
+figure {
+  width: 90%;
+  position: relative;
+  border-radius: 10px;
+  animation-name: photo-figure;
+  animation-duration: 1.5s;
+}
+
+@keyframes photo-figure {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* QUERIES  */
+
 @media (max-width: 1170px) {
   main {
     padding: 30px;
@@ -214,6 +316,21 @@ button.right::after {
     transform: scale(0.65);
     top: -33%;
     left: -27%;
+  }
+  @keyframes bg-pattern {
+    0% {
+      left: 120%;
+    }
+
+    50% {
+      left: -40%;
+    }
+    100% {
+      top: -33%;
+      left: -27%;
+      right: 0;
+      bottom: 0;
+    }
   }
   figure {
     width: 85%;
@@ -250,6 +367,22 @@ button.right::after {
     top: -41%;
     left: -17%;
   }
+
+  @keyframes bg-pattern {
+    0% {
+      left: 120%;
+    }
+
+    50% {
+      left: -50%;
+    }
+    100% {
+      top: -41%;
+      left: -17%;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
 
 @media (max-width: 675px) {
@@ -285,6 +418,22 @@ button.right::after {
     transform: scale(0.4);
     top: -46%;
     left: -44%;
+  }
+
+  @keyframes bg-pattern {
+    0% {
+      left: 120%;
+    }
+
+    50% {
+      left: -60%;
+    }
+    100% {
+      top: -46%;
+      left: -44%;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   .testimonial {
@@ -340,5 +489,35 @@ button.right::after {
     bottom: -4.5%;
     left: 50%;
     transform: translateX(-50%) translateY(5px);
+  }
+
+  .img-slider::after {
+    content: url(./images/pattern-bg.svg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scale(0.1);
+    top: -54%;
+    left: -57%;
+
+    z-index: -1;
+    animation-name: bg-pattern;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes bg-pattern {
+    0% {
+      left: 120%;
+    }
+
+    50% {
+      left: -80%;
+    }
+    100% {
+      top: -54%;
+      left: -57%;
+      right: 0;
+      bottom: 0;
+    }
   }
 }
