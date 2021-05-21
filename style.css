@@ -26,6 +26,8 @@ body {
   align-items: center;
   position: relative;
   justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 body::after {
@@ -33,7 +35,7 @@ body::after {
   position: absolute;
   transform: scale(1.2);
   transform-origin: bottom left;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
 }
 
@@ -210,11 +212,17 @@ button.right::after {
   .testimonial-card {
     font-size: 1.5rem;
   }
+  body::after {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
   .testimonial-card {
     font-size: 1.3rem;
+  }
+  body::after {
+    transform: scale(0.9);
   }
 
   figure {
@@ -232,4 +240,91 @@ button.right::after {
   }
 }
 
-@media (max-width: 650px);
+@media (max-width: 675px) {
+  body {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  body::after {
+    transform: scale(0.4);
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    max-width: 350px;
+    width: 90%;
+    min-height: 600px;
+    max-height: 90vh;
+  }
+
+  .img-slider {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    transform: translate(0);
+    padding-top: 20px;
+  }
+
+  .img-slider::after {
+    transform: scale(0.4);
+    top: -46%;
+    left: -44%;
+  }
+
+  .testimonial {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translateY(35%);
+    z-index: 1;
+  }
+
+  .testimonial-card {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    width: 95px;
+    height: 45px;
+    z-index: 3;
+    bottom: -4.5%;
+    left: 20%;
+    transform: translateX(20%) translateY(5px);
+  }
+
+  .text::after {
+    transform: scale(0.6) translateX(-81%);
+    top: -30%;
+    left: 50%;
+  }
+
+  .name {
+    display: block;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  body::after {
+    transform: scale(0.3);
+  }
+  main {
+    padding: 10px;
+    width: 95vw;
+  }
+
+  .img-slider::after {
+    transform: scale(0.1);
+    top: -46%;
+    left: -36%;
+  }
+
+  .buttons {
+    transform: translateX(20%) translateY(5px);
+  }
+}
