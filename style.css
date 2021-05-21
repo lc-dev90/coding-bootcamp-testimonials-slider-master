@@ -152,6 +152,11 @@ figure img {
   background-color: white;
 }
 
+.name {
+  display: block;
+  padding-bottom: 0;
+}
+
 button:hover {
   filter: contrast(0.85);
 }
