@@ -393,7 +393,7 @@ figure {
   }
 
   body::after {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   main {
     display: flex;
@@ -470,13 +470,21 @@ figure {
   }
 }
 
+@media (max-width: 490px) {
+  body::after {
+    transform: scale(0.6);
+    bottom: -10px;
+  }
+}
+
 @media (max-width: 350px) {
   body {
     overflow: visible;
     height: initial;
   }
   body::after {
-    transform: scale(0.5);
+    transform: scale(0.35);
+    bottom: -10px;
   }
 
   .img-slider::after {
