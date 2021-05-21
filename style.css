@@ -368,6 +368,22 @@ figure {
     left: -17%;
   }
 
+  @keyframes botao-voador {
+    0% {
+      display: none;
+    }
+
+    25% {
+      bottom: -504.5%;
+      left: 20%;
+    }
+
+    100% {
+      bottom: -4.5%;
+      left: 20%;
+    }
+  }
+
   @keyframes bg-pattern {
     0% {
       left: 120%;
@@ -436,6 +452,22 @@ figure {
     }
   }
 
+  @keyframes botao-voador {
+    0% {
+      display: none;
+    }
+
+    25% {
+      bottom: -1104.5%;
+      left: 20%;
+    }
+
+    100% {
+      bottom: -4.5%;
+      left: 20%;
+    }
+  }
+
   .testimonial {
     position: relative;
     top: 0;
@@ -456,6 +488,7 @@ figure {
     bottom: -4.5%;
     left: 20%;
     transform: translateX(20%) translateY(5px);
+    animation-duration: 1.5s;
   }
 
   .text::after {
@@ -474,6 +507,21 @@ figure {
   body::after {
     transform: scale(0.6);
     bottom: -10px;
+  }
+  @keyframes botao-voador {
+    0% {
+      display: none;
+    }
+
+    25% {
+      bottom: -1104.5%;
+      left: 20%;
+    }
+
+    100% {
+      bottom: -4.5%;
+      left: 20%;
+    }
   }
 }
 
